@@ -1,5 +1,12 @@
 Often when debugging web applications, it is required to display response/request fields in logs. This module allows you to switch from regular uvicorn logging to advanced FasApi logging using Middleware. You can either use logging or loguru. An extra-logger has also been added to the module, when called in any module, fields are added containing the name of the file and function, as well as parameters included in the function.
 
+- [Additional fields](#additional-fields)
+  - [Adding fields to logging](#adding-fields-to-logging)
+  - [Translation of logging to loguru](#translation-of-logging-to-loguru)
+- [Extra-Logger](#extra-logger)
+  - [logging extra-logger](#logging-extra-logger)
+  - [loguru extra-logger](#loguru-extra-logger)
+
 Additional fields
 =================
 
