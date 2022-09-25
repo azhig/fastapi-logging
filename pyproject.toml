@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fastapi-logging"
+version = "0.1.0"
+description = "A module which adds information about the request and response to the logging"
+authors = ["azhig <azhig.dev@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "fastapi_logging" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.83.0"
+loguru = "^0.6.0"
+stackprinter = "^0.2.8"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+
+
+[tool.poetry.group.test.dependencies]
+uvicorn = "^0.18.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
